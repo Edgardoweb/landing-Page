@@ -95,3 +95,17 @@ a:focus-visible {
 img {
   @apply max-w-full h-auto;
 }
+
+/* styles/globals.css */
+.carousel-logos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

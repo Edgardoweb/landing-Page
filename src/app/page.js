@@ -3,9 +3,9 @@
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Monitor, Server, Code, Shield, Database, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import { MobileNav } from "@/components/mobile-nav"
 import { ContactForm } from "@/components/contact-form"
+import Carousel from "@/components/Carousel"
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image
-              src="/placeholder.svg?height=40&width=40"
+            <img
+              src="/logos/edgardowebsinletras.png"
               alt="Edgardoweb & System Logo"
               width={40}
               height={40}
@@ -100,8 +100,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative h-[300px] md:h-[400px] lg:h-[500px]">
-                <Image
-                  src="/placeholder.svg?height=500&width=600"
+                <img
+                  src="/valery.jpeg"
                   alt="Servicios tecnológicos"
                   fill
                   className="object-contain"
@@ -273,6 +273,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
+            <Carousel />
           </div>
         </section>
 
@@ -281,8 +282,8 @@ export default function Home() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[300px] md:h-[400px]">
-                <Image
-                  src="/placeholder.svg?height=400&width=500"
+                <img
+                  src="/team.jpg"
                   alt="Nuestro equipo"
                   fill
                   className="object-cover rounded-lg"
@@ -454,7 +455,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-base font-medium">Correo electrónico</h4>
-                      <p className="text-muted-foreground">contacto@edgardoweb.com</p>
+                      <p className="text-muted-foreground">info@edgardoweb.com.ve</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -505,7 +506,29 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-base font-medium">Teléfono</h4>
-                      <p className="text-muted-foreground">+58 (123) 456-7890</p>
+                      <p className="text-muted-foreground">+58 (0426) -154 90 06</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <svg
+                        className="h-5 w-5 text-primary"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21 3L15 9M15 9V4M15 9H20M21 21L15 15M15 15V20M15 15H20M3 21L9 15M9 15H4M9 15V20M3 3L9 9M9 9H4M9 9V4"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-base font-medium">Dirección</h4>
+                      <p className="text-muted-foreground">Urbanización La Concordia calle 06 local 53</p>
                     </div>
                   </div>
                 </div>
@@ -522,8 +545,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Image
-                  src="/placeholder.svg?height=40&width=40"
+                <img
+                  src="/logos/edgardowebsinletras.png"
                   alt="Edgardoweb & System Logo"
                   width={40}
                   height={40}
@@ -537,7 +560,7 @@ export default function Home() {
               <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Servicios</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Link href="#" className="text-muted-foreground hover:text-foreground">
                     Soporte técnico
                   </Link>
                 </li>
@@ -571,24 +594,24 @@ export default function Home() {
                     Sobre nosotros
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
                     Clientes
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
                     Testimonios
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
                     Blog
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Legal</h4>
               <ul className="space-y-2">
                 <li>
@@ -602,7 +625,7 @@ export default function Home() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
             <p>© {new Date().getFullYear()} Edgardoweb & System. Todos los derechos reservados.</p>
